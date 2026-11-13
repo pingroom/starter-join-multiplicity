@@ -1,0 +1,93 @@
+{
+  "joinId": "paper-stock",
+  "title": "Paper stock join",
+  "context": "Join complete paper stock and label exports by stock code.",
+  "completeExports": true,
+  "left": {
+    "id": "stock",
+    "label": "Paper stock",
+    "columns": [
+      {
+        "id": "code",
+        "label": "Stock code"
+      },
+      {
+        "id": "sheets",
+        "label": "Sheet count"
+      }
+    ],
+    "rows": [
+      {
+        "id": "s1",
+        "values": {
+          "code": "A",
+          "sheets": 10
+        }
+      },
+      {
+        "id": "s2",
+        "values": {
+          "code": "A",
+          "sheets": 20
+        }
+      },
+      {
+        "id": "s3",
+        "values": {
+          "code": "B",
+          "sheets": 30
+        }
+      },
+      {
+        "id": "s4",
+        "values": {
+          "code": null,
+          "sheets": 5
+        }
+      }
+    ]
+  },
+  "right": {
+    "id": "labels",
+    "label": "Paper labels",
+    "columns": [
+      {
+        "id": "code",
+        "label": "Stock code"
+      },
+      {
+        "id": "label",
+        "label": "Display label"
+      }
+    ],
+    "rows": [
+      {
+        "id": "l1",
+        "values": {
+          "code": "A",
+          "label": "Matte"
+        }
+      },
+      {
+        "id": "l2",
+        "values": {
+          "code": "A",
+          "label": "Smooth"
+        }
+      },
+      {
+        "id": "l3",
+        "values": {
+          "code": "C",
+          "label": "Gloss"
+        }
+      }
+    ]
+  },
+  "keys": [
+    {
+      "leftColumn": "code",
+      "rightColumn": "code"
+    }
+  ]
+}
